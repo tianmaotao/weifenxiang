@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="feg-fc-dqE">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Message View Controller-->
+        <scene sceneID="Ybn-rA-BVR">
+            <objects>
+                <viewController id="feg-fc-dqE" customClass="MessageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wnh-i9-4bd"/>
+                        <viewControllerLayoutGuide type="bottom" id="a9B-c7-alP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sMz-YC-YFs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="164-ea-GzO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="164-ea-GzO" firstAttribute="leading" secondItem="sMz-YC-YFs" secondAttribute="leadingMargin" constant="-20" id="4PG-s4-1sN"/>
+                            <constraint firstItem="164-ea-GzO" firstAttribute="top" secondItem="Wnh-i9-4bd" secondAttribute="bottom" constant="-20" id="EAw-1u-uSf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="164-ea-GzO" secondAttribute="trailing" constant="-20" id="R1W-Ho-Z6A"/>
+                            <constraint firstItem="a9B-c7-alP" firstAttribute="top" secondItem="164-ea-GzO" secondAttribute="bottom" id="yp2-hI-Dcu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="164-ea-GzO" id="fmd-Jj-LuI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yIx-Ol-wi1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="163"/>
+        </scene>
+    </scenes>
+</document>
